@@ -1,3 +1,69 @@
 @use "../utils/mixins" as mixin;
 @use "../utils/variables" as var;
 @use "../base/typography";
+
+footer {
+  @media (max-width: 1060px) {
+    flex-direction: column;
+  }
+  @include mixin.df(space-between, center, row);
+  min-height: 30vh;
+  background-image: url(../../images/footer/bg.png);
+  background-size: cover;
+  background-color: #f9f4e2;
+  font-family: Rubik;
+  .left {
+    @media (max-width: 1060px) {
+      margin-top: 30px;
+    }
+    @media (max-width: 360px) {
+      margin-bottom: 20px;
+    }
+    @include mixin.df(space-between, center, row);
+    img {
+      margin-right: 25px;
+    }
+    a {
+      margin-right: 20px;
+      color: #414141;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+  .right {
+    @media (max-width: 1060px) {
+      margin-bottom: 30px;
+    }
+    @include mixin.df(space-between, center, row);
+    .is {
+      padding-right: 50px;
+      i {
+        padding-right: 10px;
+      }
+    }
+    .call {
+      @include mixin.df(center, center, row);
+      margin-bottom: 30px;
+      i {
+        margin-right: 10px;
+      }
+      p {
+        color: #414141;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+    .des {
+      @include mixin.df(space-between, center, row);
+      p {
+        color: #414141;
+        font-size: 14px;
+        font-weight: 400;
+        margin-right: 10px;
+      }
+      svg {
+        width: 100%;
+      }
+    }
+  }
+}
