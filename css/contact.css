@@ -304,3 +304,182 @@ footer .right .des p {
 footer .right .des svg {
   width: 100%;
 }
+
+main {
+  font-family: Rubik;
+  margin-top: 105px;
+  background-color: hsl(48, 65%, 95%);
+}
+
+.contacts {
+  padding-top: 40px;
+  min-height: 40vh;
+}
+.contacts a {
+  color: #414141;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.contacts h1 {
+  color: #414141;
+  font-size: 56px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+@media (max-width: 588px) {
+  .contacts h1 {
+    font-size: 32px;
+  }
+}
+.contacts .destin {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+}
+@media (max-width: 495px) {
+  .contacts .destin {
+    flex-direction: column;
+  }
+}
+.contacts .destin .des {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+@media (max-width: 495px) {
+  .contacts .destin .des {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.contacts .destin .des h4 {
+  color: #414141;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 13px;
+  margin-left: 15px;
+}
+.contacts .destin .des p {
+  color: #414141;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration-line: underline;
+  margin-left: 15px;
+}
+.contacts .destin .des:first-child {
+  padding-right: 50px;
+}
+
+.shops {
+  margin-top: 20px;
+}
+.shops h1 {
+  color: #414141;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 55px;
+}
+@media (max-width: 360px) {
+  .shops h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+}
+.shops .ap-tab {
+  margin-bottom: 50px;
+}
+@media (max-width: 630px) {
+  .shops .ap-tab .ap-tab-list {
+    overflow: scroll;
+    padding: 10px;
+  }
+}
+.shops .ap-tab .ap-tab-list .ap-tab-link {
+  padding: 10px 30px;
+  background-color: white;
+  margin-bottom: 20px;
+  color: #606060;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.5s;
+  font-weight: 400;
+}
+.shops .ap-tab .ap-tab-list .ap-tab-link:hover {
+  background-color: #70c05b;
+  color: white;
+  border-radius: 5px;
+}
+.shops .dess {
+  width: 70%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+@media (max-width: 1150px) {
+  .shops .dess {
+    width: 100%;
+  }
+}
+@media (max-width: 865px) {
+  .shops .dess .dest {
+    width: 33%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 595px) {
+  .shops .dess .dest {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 395px) {
+  .shops .dess .dest {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.shops .dess .dest img {
+  margin-bottom: 20px;
+}
+.shops .dess .dest .place {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+.shops .dess .dest .place p {
+  color: #414141;
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+@media (max-width: 865px) {
+  .shops .dess .dest .place p {
+    margin-right: 60px;
+  }
+}
+.shops .dess .dest .place h5 {
+  color: #414141;
+  font-size: 18px;
+  margin-left: 10px;
+  font-weight: 400;
+  text-decoration-line: underline;
+}
+@media (max-width: 865px) {
+  .shops .dess .dest .place h5 {
+    margin-right: 70px;
+  }
+}
+.shops .ap-tab-container {
+  margin-top: 30px;
+  padding-bottom: 50px;
+}

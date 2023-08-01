@@ -1,4 +1,117 @@
 @use "../global";
 @use "../utils/variables" as var;
 @use "../base/typography";
-@use "../utils/mixins" as mixin;
+@use "../utils/mixins" as mxn;
+
+main {
+  font-family: Rubik;
+  margin-top: 105px;
+  background-repeat: no-repeat;
+  background-image: url(../../images/o-nas/bg-1.png);
+  background-color: hsl(48, 65%, 95%);
+}
+
+.about {
+  @media (max-width: 1015px) {
+    flex-direction: column;
+    padding-top: 25px;
+  }
+  @include mxn.df(space-between, center, row);
+  min-height: 60vh;
+  .left {
+    a {
+      color: #414141;
+      font-size: 16px;
+      font-weight: 400;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    h1 {
+      @media (max-width: 588px) {
+        font-size: 32px;
+      }
+      color: #414141;
+      font-size: 56px;
+      font-weight: 700;
+      margin-top: 15px;
+    }
+    p {
+      @media (max-width: 588px) {
+        font-size: 18px;
+      }
+      color: #f63;
+      font-size: 24px;
+      font-weight: 700;
+      margin-top: 20px;
+    }
+  }
+  .right {
+    img {
+      @media (max-width: 1015px) {
+        margin-bottom: 30px;
+      }
+      @media (max-width: 637px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.benefits {
+  @include mxn.df(space-between, center, row);
+  min-height: 50vh;
+  flex-wrap: wrap;
+  .bens {
+    @media (max-width: 860px) {
+      width: 100%;
+    }
+    @media (max-width: 595.5px) {
+      margin-bottom: 20px;
+    }
+    @include mxn.df(space-between, left, row);
+    width: 33%;
+    svg {
+      width: 50%;
+    }
+    p {
+      color: #414141;
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+    h2 {
+      color: #414141;
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
+}
+
+.thanks {
+  @media (max-width: 440px) {
+    flex-direction: column;
+  }
+  @include mxn.df(space-between, center, row);
+  min-height: 40vh;
+  img {
+    @media (max-width: 1070px) {
+      margin-top: 30px;
+    }
+  }
+  h2 {
+    @media (max-width: 1070px) {
+      font-size: 20px;
+      width: 100%;
+      text-align: center;
+      margin-left: 20px;
+      margin-bottom: 30px;
+      margin-top: 20px;
+    }
+    color: #70c05b;
+    font-size: 28px;
+    font-weight: 700;
+    border-radius: 16px;
+    background-color: #e5ffde;
+    padding: 35px 25px;
+  }
+}

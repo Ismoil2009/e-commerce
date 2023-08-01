@@ -304,3 +304,88 @@ footer .right .des p {
 footer .right .des svg {
   width: 100%;
 }
+
+main {
+  font-family: Rubik;
+  margin-top: 105px;
+  background-color: hsl(48, 65%, 95%);
+}
+
+.vakansii {
+  padding-top: 40px;
+}
+.vakansii a {
+  color: #414141;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.vakansii h1 {
+  color: #414141;
+  font-size: 56px;
+  font-weight: 700;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+@media (max-width: 588px) {
+  .vakansii h1 {
+    font-size: 32px;
+  }
+}
+.vakansii .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 125vh;
+}
+.vakansii .row .card {
+  box-shadow: 2px 5px 20px -10px black;
+  width: 32%;
+  background-color: white;
+  padding: 10px;
+}
+@media (max-width: 1000px) {
+  .vakansii .row .card {
+    width: 49%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 510px) {
+  .vakansii .row .card {
+    width: 100%;
+  }
+}
+.vakansii .row .card h3 {
+  color: #414141;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.vakansii .row .card h4 {
+  color: #414141;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.vakansii .row .card p {
+  color: #414141;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.vakansii .row .card .cl {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+}
+.vakansii .row .card .cl p {
+  color: #414141;
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 8px;
+  text-decoration-line: underline;
+}
