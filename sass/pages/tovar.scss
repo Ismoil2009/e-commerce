@@ -2,3 +2,321 @@
 @use "../utils/variables" as var;
 @use "../base/typography";
 @use "../utils/mixins" as mixin;
+
+main {
+  font-family: Rubik;
+  margin-top: 105px;
+  background-color: hsl(48, 65%, 95%);
+}
+
+.tov {
+  padding-top: 40px;
+  .dest {
+    @include mixin.df(start, center, row);
+    margin-bottom: 30px;
+    a {
+      color: #414141;
+      font-size: 16px;
+      font-weight: 400;
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+    p {
+      @media (max-width: 360px) {
+        font-size: 10px;
+      }
+      color: #8f8f8f;
+      font-size: 14px;
+      margin-left: 10px;
+      font-weight: 400;
+      margin-right: 8px;
+    }
+    h5 {
+      @media (max-width: 434px) {
+        font-size: 10px;
+      }
+      @media (max-width: 386px) {
+        display: none;
+      }
+      color: #8f8f8f;
+      font-size: 14px;
+      font-weight: 400;
+      margin-left: 8px;
+    }
+  }
+  .abt {
+    h2 {
+      @media (max-width: 268px) {
+        font-size: 20px;
+      }
+      color: #414141;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .txt {
+      @media (max-width: 500px) {
+        overflow: scroll;
+      }
+      margin-top: 15px;
+      padding-bottom: 35px;
+      @include mixin.df(start, center, row);
+      h6 {
+        color: #414141;
+        font-size: 12px;
+        margin-right: 15px;
+        font-weight: 400;
+      }
+      svg {
+        margin-right: 15px;
+      }
+      h5 {
+        color: #414141;
+        font-size: 14px;
+        font-weight: 400;
+        text-decoration-line: underline;
+      }
+      .share {
+        @include mixin.df(start, center, row);
+        margin: 0 15px;
+        svg {
+          @media (max-width: 579px) {
+            display: none;
+          }
+        }
+      }
+      .like {
+        svg {
+          @media (max-width: 579px) {
+            display: none;
+          }
+        }
+        @include mixin.df(start, center, row);
+        margin: 0 15 px;
+      }
+    }
+  }
+}
+
+.recently {
+  margin-top: 80px;
+  .t-wrapper {
+    @media (max-width: 768px) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: 360px) {
+      flex-direction: column;
+    }
+    @include mixin.df(space-between, center, row);
+    h2 {
+      @media (max-width: 360px) {
+        margin-bottom: 10px;
+        font-size: 24px;
+      }
+      color: #414141;
+      font-size: 36px;
+      font-weight: 700;
+    }
+    a {
+      color: var(--grayscale-hardest, #606060);
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+  .row {
+    @include mixin.df(space-between, center, row);
+    min-height: 70vh;
+    flex-wrap: wrap;
+    .card {
+      @media (max-width: 768px) {
+        margin-bottom: 30px;
+        width: 40%;
+        &:hover {
+          width: 42%;
+        }
+      }
+      @media (max-width: 590px) {
+        margin-bottom: 30px;
+        width: 45%;
+        &:hover {
+          width: 47%;
+        }
+      }
+      @media (max-width: 510px) {
+        margin-bottom: 30px;
+        width: 100%;
+        &:hover {
+          width: 102%;
+        }
+      }
+      cursor: pointer;
+      padding: 0 5px;
+      border-radius: 5px;
+      background-color: white;
+      width: 23%;
+      min-height: 30vh;
+      box-shadow: 2px 5px 10px -10px black;
+      transition: 0.5s;
+      img {
+        width: 100%;
+        margin: 15px 0;
+      }
+      p {
+        color: #414141;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      h3 {
+        margin-bottom: 8px;
+        color: #414141;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      button {
+        font-size: 16px;
+        font-weight: 400;
+        width: 100%;
+        padding: 13px 0;
+        transition: 0.5s;
+        border: 2px solid #70c05b;
+        background-color: white;
+        border-radius: 5px;
+        margin: 8px 0;
+        &:hover {
+          border: 2px solid white;
+          background-color: #ff6633;
+          a {
+            color: white;
+          }
+        }
+        a {
+          color: #70c05b;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+.sales {
+  margin-top: 80px;
+  .t-wrapper {
+    @media (max-width: 768px) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: 360px) {
+      flex-direction: column;
+    }
+    @include mixin.df(space-between, center, row);
+    h2 {
+      @media (max-width: 360px) {
+        margin-bottom: 10px;
+        font-size: 24px;
+      }
+      color: #414141;
+      font-size: 36px;
+      font-weight: 700;
+    }
+    a {
+      color: var(--grayscale-hardest, #606060);
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+  .row {
+    @include mixin.df(space-between, center, row);
+    min-height: 70vh;
+    flex-wrap: wrap;
+    .card {
+      @media (max-width: 768px) {
+        margin-bottom: 30px;
+        width: 40%;
+        &:hover {
+          width: 42%;
+        }
+      }
+      @media (max-width: 590px) {
+        margin-bottom: 30px;
+        width: 45%;
+        &:hover {
+          width: 47%;
+        }
+      }
+      @media (max-width: 510px) {
+        margin-bottom: 30px;
+        width: 100%;
+        &:hover {
+          width: 102%;
+        }
+      }
+      cursor: pointer;
+      padding: 0 5px;
+      border-radius: 5px;
+      background-color: white;
+      width: 23%;
+      min-height: 30vh;
+      box-shadow: 2px 5px 10px -10px black;
+      transition: 0.5s;
+      img {
+        width: 100%;
+        margin: 15px 0;
+      }
+      .price {
+        @include mixin.df(space-between, center, row);
+        margin-bottom: 7px;
+        p {
+          color: #414141;
+          font-size: 18px;
+          font-weight: 700;
+        }
+        h4 {
+          color: #606060;
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+      .type {
+        @include mixin.df(space-between, center, row);
+        margin-bottom: 7px;
+        p {
+          color: #606060;
+          font-size: 16px;
+          font-weight: 400;
+        }
+        h4 {
+          color: #606060;
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+      h3 {
+        margin-bottom: 8px;
+        color: #414141;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      button {
+        font-size: 16px;
+        font-weight: 400;
+        width: 100%;
+        padding: 13px 0;
+        transition: 0.5s;
+        border: 2px solid #70c05b;
+        background-color: white;
+        border-radius: 5px;
+        margin: 8px 0;
+        &:hover {
+          border: 2px solid white;
+          background-color: #ff6633;
+          a {
+            color: white;
+          }
+        }
+        a {
+          color: #70c05b;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}

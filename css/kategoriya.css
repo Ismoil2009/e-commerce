@@ -304,3 +304,214 @@ footer .right .des p {
 footer .right .des svg {
   width: 100%;
 }
+
+main {
+  font-family: Rubik;
+  margin-top: 105px;
+  background-color: hsl(48, 65%, 95%);
+}
+
+.msy {
+  padding-top: 40px;
+  min-height: 27vh;
+}
+.msy .dest {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+}
+.msy .dest a {
+  color: #414141;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.msy .dest p {
+  color: #8f8f8f;
+  font-size: 14px;
+  margin-left: 10px;
+  font-weight: 400;
+}
+@media (max-width: 360px) {
+  .msy .dest p {
+    font-size: 10px;
+  }
+}
+.msy h1 {
+  color: #414141;
+  font-size: 56px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+@media (max-width: 588px) {
+  .msy h1 {
+    font-size: 32px;
+  }
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+@media (max-width: 767px) {
+  .filter {
+    flex-direction: column;
+  }
+}
+.filter .left {
+  width: 55%;
+  margin-right: 30px;
+}
+@media (max-width: 767px) {
+  .filter .left {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+.filter .left .fl {
+  color: #414141;
+  font-size: 18px;
+  background-color: #f3f2f1;
+  font-weight: 700;
+  padding: 15px;
+}
+.filter .left .prcl {
+  margin-top: 45px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.filter .left .prcl p {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+}
+.filter .left .prcl button {
+  color: #606060;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 15px;
+}
+.filter .left form {
+  margin-bottom: 20px;
+}
+.filter .left form input {
+  padding: 8px 15px;
+}
+@media (max-width: 1286px) {
+  .filter .left form input {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+@media (max-width: 1286px) {
+  .filter .left form p {
+    display: none;
+  }
+}
+.filter .left .rng {
+  width: 100%;
+}
+.filter .right {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  min-height: 70vh;
+  flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  .filter .right {
+    width: 100%;
+  }
+}
+.filter .right .card {
+  cursor: pointer;
+  padding: 0 5px;
+  border-radius: 5px;
+  background-color: white;
+  width: 48%;
+  margin-bottom: 20px;
+  min-height: 30vh;
+  box-shadow: 2px 5px 10px -10px black;
+  transition: 0.5s;
+}
+@media (max-width: 515px) {
+  .filter .right .card {
+    width: 100%;
+  }
+}
+.filter .right .card img {
+  width: 100%;
+  margin: 15px 0;
+}
+.filter .right .card .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 7px;
+}
+.filter .right .card .price p {
+  color: #414141;
+  font-size: 18px;
+  font-weight: 700;
+}
+.filter .right .card .price h4 {
+  color: #606060;
+  font-size: 16px;
+  font-weight: 400;
+}
+.filter .right .card .type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 7px;
+}
+.filter .right .card .type p {
+  color: #606060;
+  font-size: 16px;
+  font-weight: 400;
+}
+.filter .right .card .type h4 {
+  color: #606060;
+  font-size: 16px;
+  font-weight: 400;
+}
+.filter .right .card h3 {
+  margin-bottom: 8px;
+  color: #414141;
+  font-size: 16px;
+  font-weight: 400;
+}
+.filter .right .card button {
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  padding: 13px 0;
+  transition: 0.5s;
+  border: 2px solid #70c05b;
+  background-color: white;
+  border-radius: 5px;
+  margin: 8px 0;
+}
+.filter .right .card button:hover {
+  border: 2px solid white;
+  background-color: #ff6633;
+}
+.filter .right .card button:hover a {
+  color: white;
+}
+.filter .right .card button a {
+  color: #70c05b;
+  transition: 0.5s;
+}
