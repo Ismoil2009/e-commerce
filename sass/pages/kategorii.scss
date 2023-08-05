@@ -2,3 +2,43 @@
 @use "../utils/variables" as var;
 @use "../base/typography";
 @use "../utils/mixins" as mixin;
+
+main {
+  font-family: Rubik;
+  margin-top: 105px;
+  background-color: hsl(48, 65%, 95%);
+}
+
+.txt {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  a {
+    color: #414141;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  h1 {
+    @media (max-width: 588px) {
+      font-size: 32px;
+    }
+    color: #414141;
+    font-size: 56px;
+    font-weight: 700;
+    margin-top: 15px;
+  }
+}
+
+.row {
+  .line {
+    @include mixin.df(space-between, center, row);
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+    a {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

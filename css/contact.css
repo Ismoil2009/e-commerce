@@ -60,20 +60,20 @@ header .wrap {
   min-height: 15vh;
 }
 @media (max-width: 360px) {
-  header .l {
+  header .wrap .l {
     margin-right: 10px;
   }
 }
-header p {
+header .wrap p {
   font-weight: 700;
   font-size: 24px;
 }
 @media (max-width: 1100px) {
-  header p {
+  header .wrap p {
     display: none;
   }
 }
-header .cat {
+header .wrap .cat {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -84,33 +84,34 @@ header .cat {
   cursor: pointer;
 }
 @media (max-width: 412px) {
-  header .cat {
+  header .wrap .cat {
     display: none;
   }
 }
-header .cat img {
+header .wrap .cat .catt img {
+  color: #70c05b;
   margin-right: 10px;
 }
 @media (max-width: 1100px) {
-  header .cat img {
+  header .wrap .cat .catt img {
     margin-right: -1px;
   }
 }
-header .cat a {
+header .wrap .cat a {
   color: white;
 }
 @media (max-width: 1100px) {
-  header .cat a {
+  header .wrap .cat a {
     display: none;
   }
 }
-header form {
+header .wrap form {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
-header form input {
+header .wrap form input {
   color: #8f8f8f;
   border: 2px solid #70c05b;
   padding: 10px 30px;
@@ -119,101 +120,138 @@ header form input {
   border-radius: 5px;
 }
 @media (max-width: 360px) {
-  header form input {
+  header .wrap form input {
     width: 100%;
   }
 }
-header form img {
+header .wrap form img {
   margin-left: -35px;
 }
-header .izb {
+header .wrap .izb {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
 @media (max-width: 768px) {
-  header .izb {
+  header .wrap .izb {
     display: none;
   }
 }
-header .izb svg {
+header .wrap .izb svg {
   margin-right: 5px;
 }
-header .izb a {
+header .wrap .izb a {
   color: #414141;
   font-size: 14px;
   font-weight: 400;
 }
-header .pro {
+header .wrap .pro {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
 @media (max-width: 672px) {
-  header .pro {
+  header .wrap .pro {
     display: none;
   }
 }
-header .pro svg {
+header .wrap .pro svg {
   margin-right: 5px;
 }
-header .pro a {
+header .wrap .pro a {
   color: #414141;
   font-size: 14px;
   font-weight: 400;
 }
-header .kor {
+header .wrap .kor {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
 @media (max-width: 592px) {
-  header .kor {
+  header .wrap .kor {
     display: none;
   }
 }
-header .kor svg {
+header .wrap .kor svg {
   margin-right: 5px;
 }
-header .kor a {
+header .wrap .kor a {
   color: #414141;
   font-size: 14px;
   font-weight: 400;
 }
-header .prs {
+header .wrap .prs {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
-header .prs img {
+header .wrap .prs img {
   margin-right: 10px;
 }
 @media (max-width: 492px) {
-  header .prs img {
+  header .wrap .prs img {
     display: none;
   }
 }
-header .prs p {
+header .wrap .prs p {
   color: #232323;
   font-size: 16px;
   font-weight: 400;
 }
 @media (max-width: 1100px) {
-  header .prs p {
+  header .wrap .prs p {
     display: none;
   }
 }
-header .s {
+header .wrap .s {
   cursor: pointer;
 }
 @media (max-width: 867px) {
-  header .s {
+  header .wrap .s {
     display: none;
   }
+}
+header .categories-menu {
+  position: absolute;
+  box-shadow: 2px 10px 20px -10px black;
+  width: 100%;
+  background-color: white;
+  padding-top: 35px;
+  min-height: 25vh;
+}
+header .categories-menu .wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+header .categories-menu .wrapper .mns {
+  width: 25%;
+  text-align: center;
+}
+@media (max-width: 787px) {
+  header .categories-menu .wrapper .mns {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 435px) {
+  header .categories-menu .wrapper .mns {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+header .categories-menu .wrapper .mns .as {
+  margin-bottom: 15px;
+}
+header .categories-menu .wrapper .mns .as a {
+  color: #414141;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 footer {
