@@ -64,12 +64,13 @@ header .wrap {
     margin-right: 10px;
   }
 }
-header .wrap p {
+header .wrap .main {
   font-weight: 700;
   font-size: 24px;
+  color: #232323;
 }
 @media (max-width: 1100px) {
-  header .wrap p {
+  header .wrap .main {
     display: none;
   }
 }

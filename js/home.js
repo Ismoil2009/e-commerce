@@ -1,16 +1,22 @@
+// selectors start
+
 const salesRow = document.querySelector(".sales-row");
 const newRow = document.querySelector(".new-row");
 const popularRow = document.querySelector(".popular-row");
 
-const specialOffer = document.querySelector(".special-row");
+const specialRow = document.querySelector(".special-row");
+
+const articleRow = document.querySelector(".article-row");
+
+// selectors finish
 
 function getProductCard(product) {
   const salesCard = document.createElement("div");
   salesCard.className = "card";
 
-  const salesCardImg = document.createElement("img");
-  salesCardImg.src = product.images[0];
-  salesCardImg.alt = product.name;
+  const specialImg = document.createElement("img");
+  specialImg.src = product.images[0];
+  specialImg.alt = product.name;
 
   const salesCardPrice = document.createElement("div");
   salesCardPrice.className = "price";
@@ -29,11 +35,60 @@ function getProductCard(product) {
   const salesCardBtn = document.createElement("button");
   salesCardBtn.innerHTML = "В корзину";
 
-  salesCard.append(salesCardImg, salesCardPrice, salesCardTitle, salesCardBtn);
+  salesCard.append(specialImg, salesCardPrice, salesCardTitle, salesCardBtn);
 
   salesRow.append(salesCard);
 
   return salesCard;
+}
+
+function getSpecialCard(product) {
+  const specialCard = document.createElement("div");
+  specialCard.className = "special-card";
+
+  const specialTxt = document.createElement("div");
+  specialTxt.className = "txt";
+
+  const specialTxtH3 = document.createElement("h3");
+  specialTxtH3.innerHTML = product.name;
+
+  const specialTxtP = document.createElement("p");
+  specialTxtP.innerHTML = product.description;
+
+  specialTxt.append(specialTxtH3, specialTxtP);
+
+  const specialImg = document.createElement("img");
+  specialImg.src = product.images[0];
+  specialImg.alt = product.name;
+
+  specialCard.append(specialTxt, specialImg);
+
+  return specialCard;
+}
+
+function getArticleCard(product) {
+  const articleCard = document.createElement("div");
+  articleCard.className = "article-card";
+
+  const articleImg = document.createElement("img");
+  articleImg.src = product.images[2];
+  articleImg.alt = product.name;
+
+  const articleH6 = document.createElement("h6");
+  articleH6.innerHTML = product.rating;
+
+  const articleH2 = document.createElement("h2");
+  articleH2.innerHTML = product.name;
+
+  const articleP = document.createElement("p");
+  articleP.innerHTML = product.description;
+
+  const articleBtn = document.createElement("button");
+  articleBtn.innerHTML = "Подробнее";
+
+  articleCard.append(articleImg, articleH6, articleH2, articleP, articleBtn);
+
+  return articleCard;
 }
 
 // sales mapping start
@@ -68,31 +123,22 @@ recentlyProducts.map((product) => {
 
 // recently mapping finish
 
-// function getSpecialCard(product) {
-//   const specialCard = document.querySelector("div");
-//   // specialCard.className = "special-card";
+// special mapping start
 
-//   specialCard.append(specialTxt, specialImg);
+let specialProducts = products.slice(-2);
+specialProducts.map((product) => {
+  let card = getSpecialCard(product);
+  specialRow.append(card);
+});
 
-//   const specialTxt = document.createElement("div");
-//   specialTxt.className = "txt";
+// special mapping finish
 
-//   const specialTxtH3 = document.createElement("h3");
-//   specialTxtH3.innerHTML = "Оформите карту «Северяночка»";
+// articles mapping start
 
-//   const specialTxtP = document.createElement("p");
-//   specialTxtP.innerHTML =
-//     "И получайте бонусы при покупке в магазинах и на сайте";
+let articleProducts = products.slice(-3);
+articleProducts.map((product) => {
+  let card = getArticleCard(product);
+  articleRow.append(card);
+});
 
-//   specialTxt.append(specialTxtH3, specialTxtP);
-
-//   const specialImg = document.createElement("img");
-//   specialImg.src = product.images[10];
-//   specialImg.alt = product.name;
-// }
-
-// let speciaCard = products.slice(-2);
-// speciaCard.map((product) => {
-//   let card = getSpecialCard(product);
-//   specialOffer.append(card);
-// });
+// articles mapping finish

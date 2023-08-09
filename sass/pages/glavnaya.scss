@@ -362,6 +362,7 @@ main {
 .special {
   width: 100%;
   h1 {
+    margin-bottom: 40px;
     @media (max-width: 768px) {
       margin-bottom: 30px;
     }
@@ -379,7 +380,6 @@ main {
     }
     @include mixin.df(space-between, center, row);
     width: 100%;
-    min-height: 50vh;
     .special-card {
       @media (max-width: 768px) {
         margin-bottom: 30px;
@@ -390,18 +390,20 @@ main {
       transition: 0.5s;
       padding: 20px;
       border-radius: 4px;
-      h3 {
-        color: #414141;
-        margin-left: 30px;
-        font-size: 24px;
-        font-weight: 700;
-        margin-bottom: 10px;
-      }
-      p {
-        color: #414141;
-        margin-left: 30px;
-        font-size: 16px;
-        font-weight: 400;
+      .txt {
+        h3 {
+          color: #414141;
+          margin-left: 30px;
+          font-size: 24px;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+        p {
+          color: #414141;
+          margin-left: 30px;
+          font-size: 16px;
+          font-weight: 400;
+        }
       }
     }
     .special-card:first-child {
@@ -417,6 +419,7 @@ main {
       }
     }
   }
+  margin-bottom: 40px;
 }
 
 .shops {
@@ -489,12 +492,12 @@ main {
       font-weight: 400;
     }
   }
-  .row {
+  .article-row {
     width: 100%;
     flex-wrap: wrap;
     min-height: 70vh;
     @include mixin.df(space-between, center, row);
-    .card {
+    .article-card {
       @media (max-width: 768px) {
         width: 48%;
         margin-bottom: 30px;

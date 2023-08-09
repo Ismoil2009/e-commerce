@@ -64,12 +64,13 @@ header .wrap {
     margin-right: 10px;
   }
 }
-header .wrap p {
+header .wrap .main {
   font-weight: 700;
   font-size: 24px;
+  color: #232323;
 }
 @media (max-width: 1100px) {
-  header .wrap p {
+  header .wrap .main {
     display: none;
   }
 }
@@ -768,8 +769,10 @@ main {
 
 .special {
   width: 100%;
+  margin-bottom: 40px;
 }
 .special h1 {
+  margin-bottom: 40px;
   color: #414141;
   font-size: 36px;
   font-weight: 700;
@@ -791,7 +794,6 @@ main {
   align-items: center;
   flex-direction: row;
   width: 100%;
-  min-height: 50vh;
 }
 @media (max-width: 768px) {
   .special .special-row {
@@ -814,14 +816,14 @@ main {
     width: 100%;
   }
 }
-.special .special-row .special-card h3 {
+.special .special-row .special-card .txt h3 {
   color: #414141;
   margin-left: 30px;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 10px;
 }
-.special .special-row .special-card p {
+.special .special-row .special-card .txt p {
   color: #414141;
   margin-left: 30px;
   font-size: 16px;
@@ -915,7 +917,7 @@ main {
     margin-bottom: 10px;
   }
 }
-.articles .row {
+.articles .article-row {
   width: 100%;
   flex-wrap: wrap;
   min-height: 70vh;
@@ -924,46 +926,46 @@ main {
   align-items: center;
   flex-direction: row;
 }
-.articles .row .card {
+.articles .article-row .article-card {
   width: 30%;
   background-color: white;
   border-radius: 10px;
   padding: 10px;
 }
 @media (max-width: 768px) {
-  .articles .row .card {
+  .articles .article-row .article-card {
     width: 48%;
     margin-bottom: 30px;
   }
 }
 @media (max-width: 360px) {
-  .articles .row .card {
+  .articles .article-row .article-card {
     width: 100%;
   }
 }
-.articles .row .card img {
+.articles .article-row .article-card img {
   width: 100%;
   border-radius: 5px;
 }
-.articles .row .card h6 {
+.articles .article-row .article-card h6 {
   color: #8f8f8f;
   font-size: 12px;
   margin: 7px 0;
   font-weight: 400;
 }
-.articles .row .card h2 {
+.articles .article-row .article-card h2 {
   color: #414141;
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 7px;
 }
-.articles .row .card p {
+.articles .article-row .article-card p {
   color: #414141;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 7px;
 }
-.articles .row .card button {
+.articles .article-row .article-card button {
   color: #70c05b;
   background-color: #e5ffde;
   padding: 15px 45px;
@@ -974,11 +976,11 @@ main {
   font-weight: 400;
 }
 @media (max-width: 768px) {
-  .articles .row .card button {
+  .articles .article-row .article-card button {
     width: 100%;
   }
 }
-.articles .row .card button:hover {
+.articles .article-row .article-card button:hover {
   background-color: #70c05b;
   color: white;
 }

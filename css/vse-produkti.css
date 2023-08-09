@@ -64,12 +64,13 @@ header .wrap {
     margin-right: 10px;
   }
 }
-header .wrap p {
+header .wrap .main {
   font-weight: 700;
   font-size: 24px;
+  color: #232323;
 }
 @media (max-width: 1100px) {
-  header .wrap p {
+  header .wrap .main {
     display: none;
   }
 }
@@ -341,4 +342,114 @@ footer .right .des p {
 }
 footer .right .des svg {
   width: 100%;
+}
+
+main {
+  font-family: Rubik;
+  margin-top: 105px;
+  background-color: hsl(48, 65%, 95%);
+}
+
+.all-cards h1 {
+  padding-top: 40px;
+  color: #414141;
+  font-size: 36px;
+  font-weight: 700;
+}
+@media (max-width: 360px) {
+  .all-cards h1 {
+    margin-bottom: 5px;
+    font-size: 24px;
+  }
+}
+.all-cards .search-input {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px 20px;
+  border: 3px solid yellowgreen;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #8f8f8f;
+}
+.all-cards .all-row {
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.all-cards .all-row .all-card {
+  cursor: pointer;
+  padding: 0 5px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: white;
+  width: 23%;
+  min-height: 30vh;
+  box-shadow: 2px 5px 10px -10px black;
+  transition: 0.5s;
+}
+@media (max-width: 768px) {
+  .all-cards .all-row .all-card {
+    padding-bottom: 303px;
+    width: 40%;
+  }
+  .all-cards .all-row .all-card:hover {
+    width: 42%;
+  }
+}
+@media (max-width: 590px) {
+  .all-cards .all-row .all-card {
+    margin-bottom: 30px;
+    width: 45%;
+  }
+  .all-cards .all-row .all-card:hover {
+    width: 47%;
+  }
+}
+@media (max-width: 510px) {
+  .all-cards .all-row .all-card {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .all-cards .all-row .all-card:hover {
+    width: 102%;
+  }
+}
+.all-cards .all-row .all-card img {
+  width: 100%;
+  margin: 15px 0;
+}
+.all-cards .all-row .all-card p {
+  color: #414141;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.all-cards .all-row .all-card h3 {
+  margin-bottom: 8px;
+  color: #414141;
+  font-size: 16px;
+  font-weight: 400;
+}
+.all-cards .all-row .all-card button {
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  padding: 13px 0;
+  transition: 0.5s;
+  border: 2px solid #70c05b;
+  background-color: white;
+  border-radius: 5px;
+  margin: 8px 0;
+  color: #70c05b;
+  transition: 0.5s;
+}
+.all-cards .all-row .all-card button:hover {
+  color: white;
+  border: 2px solid white;
+  background-color: #ff6633;
 }
