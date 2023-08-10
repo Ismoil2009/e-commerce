@@ -82,6 +82,7 @@ main {
       }
     }
     form {
+      @include mixin.df(space-between, center, row);
       margin-bottom: 20px;
       input {
         @media (max-width: 1286px) {

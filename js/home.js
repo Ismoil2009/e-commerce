@@ -11,6 +11,8 @@ const articleRow = document.querySelector(".article-row");
 // selectors finish
 
 function getProductCard(product) {
+  let check = cart.find((pr) => pr.id === product.id);
+
   const salesCard = document.createElement("div");
   salesCard.className = "card";
 
@@ -33,7 +35,10 @@ function getProductCard(product) {
   salesCardTitle.innerHTML = product.description;
 
   const salesCardBtn = document.createElement("button");
+  salesCardBtn.className = check ? "active-cart" : "";
   salesCardBtn.innerHTML = "В корзину";
+
+  salesCardBtn.addEventListener("click", () => addToCart(product.id));
 
   salesCard.append(specialImg, salesCardPrice, salesCardTitle, salesCardBtn);
 

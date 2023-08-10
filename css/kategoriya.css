@@ -439,6 +439,10 @@ main {
   padding: 10px 15px;
 }
 .filter .left form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
   margin-bottom: 20px;
 }
 .filter .left form input {
