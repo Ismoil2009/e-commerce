@@ -95,6 +95,92 @@ main {
       }
     }
   }
+  .tovar {
+    @media (max-width: 1200px) {
+      flex-direction: column;
+    }
+    @include mixin.df(start, start, row);
+    width: 100%;
+    gap: 40px;
+    .tovar-left {
+      @media (max-width: 1200px) {
+        width: 100%;
+      }
+      @include mixin.df(space-between, center, row);
+      width: 50%;
+      .bgim img {
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+      }
+      .sml-imgs img {
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+      }
+    }
+    .tovar-right {
+      @media (max-width: 1200px) {
+        width: 100%;
+      }
+      width: 50%;
+      .price {
+        @include mixin.df(space-between, center, row);
+        margin-bottom: 30px;
+        p {
+          color: #606060;
+          font-size: 24px;
+          font-weight: 400;
+        }
+        h3 {
+          color: #414141;
+          font-size: 36px;
+          font-weight: 700;
+        }
+      }
+      a {
+        border-radius: 4px;
+        background: #f63;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 400;
+        padding: 15px 40px;
+        width: 100%;
+      }
+      .brand {
+        @include mixin.df(space-between, center, row);
+        background-color: #f3f2f1;
+        margin-top: 50px;
+        padding: 5px;
+        h4 {
+          color: #414141;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+      .country {
+        @include mixin.df(space-between, center, row);
+        margin-top: 10px;
+        padding: 5px;
+        h4 {
+          color: #414141;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+      .grms {
+        @include mixin.df(space-between, center, row);
+        background-color: #f3f2f1;
+        padding: 5px;
+        margin-top: 10px;
+        h4 {
+          color: #414141;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
 }
 
 .recently {

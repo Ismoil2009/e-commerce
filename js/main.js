@@ -1,6 +1,10 @@
 const categoryMenuToggleBtn = document.querySelector("button img");
 const categoriesMenuDropdown = document.querySelector(".categories-menu");
 
+const loginBtn = document.querySelector(".login");
+const modal = document.querySelector(".modal");
+const closeBtn = document.querySelector(".modal-close");
+
 const cartTotal = document.querySelector(".cart");
 
 // const categoryDropMap = document.querySelector(".wrapper");
@@ -70,3 +74,11 @@ function getCartTotal() {
 }
 
 getCartTotal();
+
+loginBtn.addEventListener("click", () => {
+  modal.classList.add("modal-show");
+});
+
+closeBtn.addEventListener("click", () => {
+  modal.classList.remove("modal-show");
+});

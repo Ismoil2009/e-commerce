@@ -2,3 +2,94 @@
 @use "../utils/variables" as var;
 @use "../base/typography";
 @use "../utils/mixins" as mixin;
+
+main {
+  font-family: Rubik;
+  margin-top: 105px;
+  background-color: hsl(48, 65%, 95%);
+}
+
+.txt {
+  padding-top: 40px;
+  .t-wrap {
+    @include mixin.df(start, center, row);
+    margin-bottom: 30px;
+    a {
+      color: #414141;
+      font-size: 16px;
+      font-weight: 400;
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+  }
+  h1 {
+    @media (max-width: 360px) {
+      margin-bottom: 5px;
+      font-size: 24px;
+    }
+    color: #414141;
+    padding-bottom: 40px;
+    font-size: 56px;
+    font-weight: 700;
+  }
+}
+
+.filter {
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+  display: flex;
+  justify-content: space-between;
+  min-height: 100vh;
+  .left {
+    @media (max-width: 767px) {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    width: 45%;
+    margin-right: 30px;
+    .fl {
+      color: #414141;
+      font-size: 18px;
+      background-color: #f3f2f1;
+      font-weight: 700;
+      padding: 15px;
+    }
+    .prcl {
+      margin-top: 45px;
+      margin-bottom: 25px;
+      @include mixin.df(space-between, center, row);
+      p {
+        color: #000;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      button {
+        color: #606060;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 10px 15px;
+      }
+    }
+    form {
+      @include mixin.df(space-between, center, row);
+      margin-bottom: 20px;
+      input {
+        @media (max-width: 1286px) {
+          margin-bottom: 10px;
+          width: 100%;
+        }
+        padding: 8px 15px;
+      }
+      p {
+        @media (max-width: 1286px) {
+          display: none;
+        }
+      }
+    }
+    .rng {
+      width: 100%;
+    }
+  }
+}
