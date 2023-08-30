@@ -4,6 +4,7 @@ const categoriesMenuDropdown = document.querySelector(".categories-menu");
 const loginBtn = document.querySelector(".login");
 const modal = document.querySelector(".modal");
 const closeBtn = document.querySelector(".modal-close");
+const vxodBtn = document.querySelector(".vxod");
 
 const cartTotal = document.querySelector(".cart");
 
@@ -81,4 +82,9 @@ loginBtn.addEventListener("click", () => {
 
 closeBtn.addEventListener("click", () => {
   modal.classList.remove("modal-show");
+});
+
+vxodBtn.addEventListener("click", () => {
+  let isDelete = confirm("Хотите войти в аккаунт?");
+  console.log(isDelete);
 });

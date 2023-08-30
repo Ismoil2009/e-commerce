@@ -8,6 +8,7 @@ const specialRow = document.querySelector(".special-row");
 
 const articleRow = document.querySelector(".article-row");
 
+
 // selectors finish
 
 function getProductCard(product) {

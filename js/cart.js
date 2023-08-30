@@ -28,7 +28,6 @@ function getCartProducts() {
     cartRow.innerHTML += getCartCard(pr);
   });
 }
-
 getCartProducts();
 
 function decreaseQuantity(id) {

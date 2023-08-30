@@ -48,7 +48,6 @@ function getAllProducts() {
     >No products !</div>`;
   }
 }
-
 getAllProducts();
 
 searchInput.addEventListener("keyup", function () {

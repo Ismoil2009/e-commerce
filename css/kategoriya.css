@@ -598,40 +598,6 @@ main {
   width: 100%;
   margin: 15px 0;
 }
-.filter .right .card .price {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  margin-bottom: 7px;
-}
-.filter .right .card .price p {
-  color: #414141;
-  font-size: 18px;
-  font-weight: 700;
-}
-.filter .right .card .price h4 {
-  color: #606060;
-  font-size: 16px;
-  font-weight: 400;
-}
-.filter .right .card .type {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  margin-bottom: 7px;
-}
-.filter .right .card .type p {
-  color: #606060;
-  font-size: 16px;
-  font-weight: 400;
-}
-.filter .right .card .type h4 {
-  color: #606060;
-  font-size: 16px;
-  font-weight: 400;
-}
 .filter .right .card h3 {
   margin-bottom: 8px;
   color: #414141;

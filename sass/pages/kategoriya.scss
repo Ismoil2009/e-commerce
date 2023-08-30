@@ -126,34 +126,6 @@ main {
         width: 100%;
         margin: 15px 0;
       }
-      .price {
-        @include mixin.df(space-between, center, row);
-        margin-bottom: 7px;
-        p {
-          color: #414141;
-          font-size: 18px;
-          font-weight: 700;
-        }
-        h4 {
-          color: #606060;
-          font-size: 16px;
-          font-weight: 400;
-        }
-      }
-      .type {
-        @include mixin.df(space-between, center, row);
-        margin-bottom: 7px;
-        p {
-          color: #606060;
-          font-size: 16px;
-          font-weight: 400;
-        }
-        h4 {
-          color: #606060;
-          font-size: 16px;
-          font-weight: 400;
-        }
-      }
       h3 {
         margin-bottom: 8px;
         color: #414141;
