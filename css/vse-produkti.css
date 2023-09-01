@@ -11,7 +11,7 @@
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 input:focus,
@@ -473,7 +473,7 @@ main {
   border-radius: 5px;
   font-size: 16px;
   font-weight: 400;
-  color: #8f8f8f;
+  color: black;
 }
 .all-cards .all-row {
   padding-bottom: 40px;
@@ -494,13 +494,19 @@ main {
   box-shadow: 2px 5px 10px -10px black;
   transition: 0.5s;
 }
-@media (max-width: 768px) {
+@media (max-width: 1198px) {
   .all-cards .all-row .all-card {
-    padding-bottom: 303px;
-    width: 40%;
+    width: 22.5%;
   }
-  .all-cards .all-row .all-card:hover {
-    width: 42%;
+}
+@media (max-width: 956px) {
+  .all-cards .all-row .all-card {
+    width: 31%;
+  }
+}
+@media (max-width: 915px) {
+  .all-cards .all-row .all-card {
+    width: 30%;
   }
 }
 @media (max-width: 590px) {
@@ -508,17 +514,11 @@ main {
     margin-bottom: 30px;
     width: 45%;
   }
-  .all-cards .all-row .all-card:hover {
-    width: 47%;
-  }
 }
 @media (max-width: 510px) {
   .all-cards .all-row .all-card {
     margin-bottom: 30px;
     width: 100%;
-  }
-  .all-cards .all-row .all-card:hover {
-    width: 102%;
   }
 }
 .all-cards .all-row .all-card img {

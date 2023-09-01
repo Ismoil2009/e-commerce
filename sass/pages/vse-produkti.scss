@@ -29,7 +29,7 @@ main {
     border-radius: 5px;
     font-size: 16px;
     font-weight: 400;
-    color: #8f8f8f;
+    color: black;
   }
   .all-row {
     padding-bottom: 40px;
@@ -39,26 +39,22 @@ main {
     flex-wrap: wrap;
     gap: 30px;
     .all-card {
-      @media (max-width: 768px) {
-        padding-bottom: 303px;
-        width: 40%;
-        &:hover {
-          width: 42%;
-        }
+      @media (max-width: 1198px) {
+        width: 22.5%;
+      }
+      @media (max-width: 956px) {
+        width: 31%;
+      }
+      @media (max-width: 915px) {
+        width: 30%;
       }
       @media (max-width: 590px) {
         margin-bottom: 30px;
         width: 45%;
-        &:hover {
-          width: 47%;
-        }
       }
       @media (max-width: 510px) {
         margin-bottom: 30px;
         width: 100%;
-        &:hover {
-          width: 102%;
-        }
       }
       cursor: pointer;
       padding: 0 5px;
